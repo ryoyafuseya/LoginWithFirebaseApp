@@ -15,6 +15,7 @@
 		C56CD45926AC781900F87825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C56CD45726AC781900F87825 /* LaunchScreen.storyboard */; };
 		C56CD46426AC781A00F87825 /* LoginWithFirebaseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56CD46326AC781A00F87825 /* LoginWithFirebaseAppTests.swift */; };
 		C56CD46F26AC781A00F87825 /* LoginWithFirebaseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56CD46E26AC781A00F87825 /* LoginWithFirebaseAppUITests.swift */; };
+		C56CD47D26AD81C100F87825 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56CD47C26AD81C000F87825 /* UIColor-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C56CD46A26AC781A00F87825 /* LoginWithFirebaseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginWithFirebaseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56CD46E26AC781A00F87825 /* LoginWithFirebaseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithFirebaseAppUITests.swift; sourceTree = "<group>"; };
 		C56CD47026AC781A00F87825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C56CD47C26AD81C000F87825 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				C56CD45526AC781900F87825 /* Assets.xcassets */,
 				C56CD45726AC781900F87825 /* LaunchScreen.storyboard */,
 				C56CD45A26AC781900F87825 /* Info.plist */,
+				C56CD47C26AD81C000F87825 /* UIColor-Extension.swift */,
 			);
 			path = LoginWithFirebaseApp;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C56CD45126AC781000F87825 /* ViewController.swift in Sources */,
+				C56CD47D26AD81C100F87825 /* UIColor-Extension.swift in Sources */,
 				C56CD44D26AC781000F87825 /* AppDelegate.swift in Sources */,
 				C56CD44F26AC781000F87825 /* SceneDelegate.swift in Sources */,
 			);
