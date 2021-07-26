@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		C56CD46F26AC781A00F87825 /* LoginWithFirebaseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56CD46E26AC781A00F87825 /* LoginWithFirebaseAppUITests.swift */; };
 		C56CD47D26AD81C100F87825 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56CD47C26AD81C000F87825 /* UIColor-Extension.swift */; };
 		C56CD48326AD92F300F87825 /* LoginWithFirebaseApp.plist in Resources */ = {isa = PBXBuildFile; fileRef = C56CD48226AD92F300F87825 /* LoginWithFirebaseApp.plist */; };
+		C56CD48B26AF231400F87825 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C56CD48A26AF231400F87825 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		C56CD47026AC781A00F87825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C56CD47C26AD81C000F87825 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		C56CD48226AD92F300F87825 /* LoginWithFirebaseApp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LoginWithFirebaseApp.plist; path = ../../../../../../Desktop/LoginWithFirebaseApp.plist; sourceTree = "<group>"; };
+		C56CD48A26AF231400F87825 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C6FD88D770590C7060B0239E /* Pods_LoginWithFirebaseApp_LoginWithFirebaseAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginWithFirebaseApp_LoginWithFirebaseAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E290B22D7832576E8CB9ABBB /* Pods_LoginWithFirebaseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginWithFirebaseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89B42C573496D7596E465E8 /* Pods-LoginWithFirebaseApp-LoginWithFirebaseAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithFirebaseApp-LoginWithFirebaseAppUITests.release.xcconfig"; path = "Target Support Files/Pods-LoginWithFirebaseApp-LoginWithFirebaseAppUITests/Pods-LoginWithFirebaseApp-LoginWithFirebaseAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,7 +107,6 @@
 				9B59520604AB29C51956D410 /* Pods-LoginWithFirebaseAppTests.debug.xcconfig */,
 				8C01FCFA58FD38A4940F4343 /* Pods-LoginWithFirebaseAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -143,6 +144,7 @@
 				C56CD45A26AC781900F87825 /* Info.plist */,
 				C56CD47C26AD81C000F87825 /* UIColor-Extension.swift */,
 				C56CD48226AD92F300F87825 /* LoginWithFirebaseApp.plist */,
+				C56CD48A26AF231400F87825 /* GoogleService-Info.plist */,
 			);
 			path = LoginWithFirebaseApp;
 			sourceTree = "<group>";
@@ -285,6 +287,7 @@
 			files = (
 				C56CD45926AC781900F87825 /* LaunchScreen.storyboard in Resources */,
 				C56CD45626AC781900F87825 /* Assets.xcassets in Resources */,
+				C56CD48B26AF231400F87825 /* GoogleService-Info.plist in Resources */,
 				C56CD45426AC781000F87825 /* Main.storyboard in Resources */,
 				C56CD48326AD92F300F87825 /* LoginWithFirebaseApp.plist in Resources */,
 			);

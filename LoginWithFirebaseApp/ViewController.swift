@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -13,6 +14,41 @@ class ViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
+    
+    
+    
+    @IBAction func tappedRegisterButton(_ sender: Any) {
+        handleAuthToFirebase()
+        
+        print("tappedRegisterButton")
+    }
+    
+
+    private func handleAuthToFirebase() {
+        guard let email = emailTextField.text else  { return }
+        guard let password = passwordTextField.text else { return }
+        
+        Auth.auth().createUser(withEmail: email, password: password) { (res, err) in
+            if let err = err {
+            print("認証情報の保存に失敗しました。\(err)")
+                return
+            }
+            print("認証情報の保存に成功しました。")
+            guard let uid = Auth.auth().currentUser?.uid else { return }
+            guard let name = self.usernameTextField.text else { return }
+            let docData = ["email": email, "name": name, "createdAt": Timestamp()] as [String : Any]
+            
+            Firestore.firestore().collection("users").document(uid).setData(docData) {(err) in
+                if let err = err {
+                    print("Firestoreへの保存に失敗しました。")
+                    return
+                }
+                print("Firestoreへの保存に成功しました。")
+            }
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
