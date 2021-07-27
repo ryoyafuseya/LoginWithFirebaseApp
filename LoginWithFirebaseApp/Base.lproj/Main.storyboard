@@ -92,7 +92,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="RegisterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JlI-6F-suo"/>
+                                    <action selector="tappedRegisterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gA3-qd-7vD"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3n-Q3-HpN">
@@ -132,7 +132,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="vt7-Ji-N4Q" id="LRh-hl-pQC"/>
                         <outlet property="passwordTextField" destination="aDp-uG-zd9" id="Pzc-nd-kex"/>
-                        <outlet property="registerButton" destination="FMc-mg-eQ1" id="K5u-kC-eZn"/>
+                        <outlet property="registerButton" destination="FMc-mg-eQ1" id="lg6-mC-BDa"/>
                         <outlet property="usernameTextField" destination="6E0-Cc-qdh" id="Euf-EE-I7d"/>
                     </connections>
                 </viewController>
