@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="LoginWithFirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUJ-y4-yqN">
+                                <rect key="frame" x="88" y="184" width="238" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="さんようこそ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dru-hl-dM2">
+                                <rect key="frame" x="146" y="356" width="122.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test@gmial.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bH3-kl-Y9S">
+                                <rect key="frame" x="146" y="400" width="122.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作成日：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUU-YH-hp8">
+                                <rect key="frame" x="172.5" y="441" width="69.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1o3-v0-0Ig">
+                                <rect key="frame" x="107" y="532" width="200" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="5B0-0G-W6v"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="9bD-2K-aM5"/>
+                                    <constraint firstAttribute="width" constant="200" id="X55-fs-Hb1"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="XCZ-yr-x47"/>
+                                    <constraint firstAttribute="height" constant="50" id="dJD-oB-GOQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dru-hl-dM2" firstAttribute="top" secondItem="sUJ-y4-yqN" secondAttribute="bottom" constant="100" id="4sx-Mh-iA5"/>
+                            <constraint firstItem="dru-hl-dM2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="8S9-bD-lPj"/>
+                            <constraint firstItem="sUJ-y4-yqN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="140" id="Fxc-aC-tKo"/>
+                            <constraint firstItem="1o3-v0-0Ig" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Mxr-qR-smp"/>
+                            <constraint firstItem="1o3-v0-0Ig" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="SY6-VA-ATn"/>
+                            <constraint firstItem="QUU-YH-hp8" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="XWZ-ho-qXd"/>
+                            <constraint firstItem="sUJ-y4-yqN" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="XbD-Pn-1CC"/>
+                            <constraint firstItem="QUU-YH-hp8" firstAttribute="top" secondItem="bH3-kl-Y9S" secondAttribute="bottom" constant="20" id="Y5Q-qe-8rM"/>
+                            <constraint firstItem="bH3-kl-Y9S" firstAttribute="top" secondItem="dru-hl-dM2" secondAttribute="bottom" constant="20" id="ey3-zt-srh"/>
+                            <constraint firstItem="1o3-v0-0Ig" firstAttribute="top" secondItem="QUU-YH-hp8" secondAttribute="bottom" constant="70" id="goF-G5-g0b"/>
+                            <constraint firstItem="bH3-kl-Y9S" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="n0U-RD-wJD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="QUU-YH-hp8" id="llU-iJ-44u"/>
+                        <outlet property="emailLabel" destination="bH3-kl-Y9S" id="5qp-cm-vxb"/>
+                        <outlet property="logoutButton" destination="1o3-v0-0Ig" id="Ie0-QE-6kk"/>
+                        <outlet property="nameLabel" destination="dru-hl-dM2" id="Bpl-cT-H7I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-378" y="165"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

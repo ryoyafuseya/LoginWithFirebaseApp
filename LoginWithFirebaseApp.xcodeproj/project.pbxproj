@@ -10,6 +10,8 @@
 		08BA288A298BF66EC049ABBC /* Pods_LoginWithFirebaseAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D25A3A4CF0B8DB62D86D69 /* Pods_LoginWithFirebaseAppTests.framework */; };
 		7A8487E4E07A96007ACEF3FB /* Pods_LoginWithFirebaseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E290B22D7832576E8CB9ABBB /* Pods_LoginWithFirebaseApp.framework */; };
 		7CDE20B585EC85EFDB7A74C0 /* Pods_LoginWithFirebaseApp_LoginWithFirebaseAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FD88D770590C7060B0239E /* Pods_LoginWithFirebaseApp_LoginWithFirebaseAppUITests.framework */; };
+		C564E1C826CFAE7000598381 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C564E1C726CFAE7000598381 /* Home.storyboard */; };
+		C564E1CA26CFB12D00598381 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C564E1C926CFB12D00598381 /* HomeViewController.swift */; };
 		C56CD44D26AC781000F87825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56CD44C26AC781000F87825 /* AppDelegate.swift */; };
 		C56CD44F26AC781000F87825 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56CD44E26AC781000F87825 /* SceneDelegate.swift */; };
 		C56CD45126AC781000F87825 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56CD45026AC781000F87825 /* ViewController.swift */; };
@@ -47,6 +49,8 @@
 		9AE1FB7AD8EB4D863104B85D /* Pods-LoginWithFirebaseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithFirebaseApp.release.xcconfig"; path = "Target Support Files/Pods-LoginWithFirebaseApp/Pods-LoginWithFirebaseApp.release.xcconfig"; sourceTree = "<group>"; };
 		9B59520604AB29C51956D410 /* Pods-LoginWithFirebaseAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithFirebaseAppTests.debug.xcconfig"; path = "Target Support Files/Pods-LoginWithFirebaseAppTests/Pods-LoginWithFirebaseAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE21AD8920F49A01F8986BB2 /* Pods-LoginWithFirebaseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithFirebaseApp.debug.xcconfig"; path = "Target Support Files/Pods-LoginWithFirebaseApp/Pods-LoginWithFirebaseApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C564E1C726CFAE7000598381 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C564E1C926CFB12D00598381 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C56CD44926AC781000F87825 /* LoginWithFirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginWithFirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56CD44C26AC781000F87825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C56CD44E26AC781000F87825 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 				C56CD47C26AD81C000F87825 /* UIColor-Extension.swift */,
 				C56CD48226AD92F300F87825 /* LoginWithFirebaseApp.plist */,
 				C56CD48A26AF231400F87825 /* GoogleService-Info.plist */,
+				C564E1C726CFAE7000598381 /* Home.storyboard */,
+				C564E1C926CFB12D00598381 /* HomeViewController.swift */,
 			);
 			path = LoginWithFirebaseApp;
 			sourceTree = "<group>";
@@ -288,6 +294,7 @@
 				C56CD45926AC781900F87825 /* LaunchScreen.storyboard in Resources */,
 				C56CD45626AC781900F87825 /* Assets.xcassets in Resources */,
 				C56CD48B26AF231400F87825 /* GoogleService-Info.plist in Resources */,
+				C564E1C826CFAE7000598381 /* Home.storyboard in Resources */,
 				C56CD45426AC781000F87825 /* Main.storyboard in Resources */,
 				C56CD48326AD92F300F87825 /* LoginWithFirebaseApp.plist in Resources */,
 			);
@@ -417,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C564E1CA26CFB12D00598381 /* HomeViewController.swift in Sources */,
 				C56CD45126AC781000F87825 /* ViewController.swift in Sources */,
 				C56CD47D26AD81C100F87825 /* UIColor-Extension.swift in Sources */,
 				C56CD44D26AC781000F87825 /* AppDelegate.swift in Sources */,
