@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import FirebaseFirestore
+import PKHUD
 
 struct User {
     
@@ -40,12 +41,16 @@ class ViewController: UIViewController {
     
 
     private func handleAuthToFirebase() {
+        HUD.show(.progress, onView: view)
         guard let email = emailTextField.text else  { return }
         guard let password = passwordTextField.text else { return }
         
         Auth.auth().createUser(withEmail: email, password: password) { (res, err) in
             if let err = err {
             print("認証情報の保存に失敗しました。\(err)")
+                HUD.hide { (_) in
+                    HUD.flash(.error, delay: 1)
+                }
                 return
             }
             self.addUserInfoToFirestore(email: email)
@@ -59,15 +64,21 @@ class ViewController: UIViewController {
         let docData = ["email": email, "name": name, "createdAt": Timestamp()] as [String : Any]
         let userRef = Firestore.firestore().collection("users").document(uid)
         
-        Firestore.firestore().collection("users").document(uid).setData(docData) {(err) in
+        userRef.setData(docData) {(err) in
             if let err = err {
                 print("Firestoreへの保存に失敗しました。")
+                HUD.hide { (_) in
+                    HUD.flash(.error, delay: 1)
+                }
                 return
             }
             
             userRef.getDocument {  (snapshot, err) in
                 if let err = err {
                     print("ユーザーの情報の取得に失敗しました\(err)")
+                    HUD.hide { (_) in
+                        HUD.flash(.error, delay: 1)
+                    }
                     return
                 }
                 
@@ -75,13 +86,24 @@ class ViewController: UIViewController {
                 let user  = User.init(dic: data)
                 
                 print("ユーザー情報の取得に成功しました。\(user.name)")
-                
-                let storyBoard = UIStoryboard(name: "Home", bundle: nil)
-                let homeViewController = storyBoard.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
-                self.present(homeViewController, animated: true, completion: nil)
-                
+                HUD.hide { (_) in
+//                    HUD.flash(.success, delay: 1)
+                    HUD.flash(.success, onView: self.view, delay: 1)
+                    {(_) in
+                        self.presentToHomeViewController(user: user)
+                    }
+                }
             }
         }
+    }
+    
+    private func presentToHomeViewController(user: User) {
+        let storyBoard = UIStoryboard(name: "Home", bundle: nil)
+        let homeViewController = storyBoard.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
+        homeViewController.user = user
+        homeViewController.modalPresentationStyle = .fullScreen
+        
+        self.present(homeViewController, animated: true, completion: nil)
     }
     
     

@@ -6,9 +6,9 @@ target 'LoginWithFirebaseApp' do
   use_frameworks!
 
   # Pods for LoginWithFirebaseApp
-pod 'Firebase/Analytics'
-pod 'Firebase/Auth'
-pod 'Firebase/Firestore'
+  pod 'PKHUD', '~> 5.0'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
   target 'LoginWithFirebaseAppTests' do
     inherit! :search_paths
